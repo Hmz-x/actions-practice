@@ -1,0 +1,10 @@
+name: First Workflow
+on: workflow_dispatch # requires manual triggering
+jobs: 
+  first-job: # identifier determined by user, i.e. second-job, my-job..
+    runs-on: ubuntu-latest # hosted virtual machines to run workflows on
+    steps:
+      - name: Print greeting
+        run: echo "Hello!!"
+      - name: Print goodbye
+        run: echo "DONE. bye!!"
