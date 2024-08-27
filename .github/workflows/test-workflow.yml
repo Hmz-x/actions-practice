@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: 18
       - name: Install dependencies
-        run: rpm ci
+        run: npm ci
       - name: build
         run: rpm run build 
       - name: deploy
