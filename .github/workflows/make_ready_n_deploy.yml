@@ -19,11 +19,7 @@ jobs:
         run: npm ci
         env:
           CI: true  # Ensure npm runs in CI mode for verbose output
-
-  make-ready:
-    needs: get-code
-    runs-on: ubuntu-latest
-    steps:
+          
       - name: Print current directory
         run: pwd
         
