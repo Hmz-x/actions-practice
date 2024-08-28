@@ -16,6 +16,10 @@ jobs:
     needs: get-code
     runs-on: ubuntu-latest
     steps:
+      - name: pwd
+        run: pwd
+      - name: List files
+        run: ls -al
       - name: lint
         run: npm run lint
       - name: test
